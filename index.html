@@ -47,4 +47,13 @@
   <p>歡迎來到我的 GitHub Pages 網站</p>
   <a href="https://github.com/171122" target="_blank">前往我的 GitHub</a>
 </body>
+
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(reg => console.log('SW registered!', reg))
+      .catch(err => console.error('SW registration failed:', err));
+  }
+</script>  
 </html>
